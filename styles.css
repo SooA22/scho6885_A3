@@ -1,0 +1,433 @@
+body {
+    margin: 0;
+    font-family: "Georgia", Times, serif;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #112752;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px #112759;
+    transition: transform 0.3s ease;
+}
+
+.content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #ebeff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-analytics {
+    margin-left: 250px; 
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #112752;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-player {
+    margin-left: 50px; 
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #ebeff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 10px 0;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px; 
+    object-fit: contain;
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #9EACC6;
+}
+
+.dailychart-content {
+    text-align: center;
+    display: flex;
+}
+
+.dailychart-text {
+    font-size: 30px;
+    text-align: center;
+}
+
+.p1 {
+    font-size: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sidebar-hidden .sidebar {
+    transform: translateX(-250px);
+}
+
+.sidebar-hidden .content {
+    margin-left: 0;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+   }
+   
+   
+.button {
+    padding: 12px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+
+
+.albumcover-container {
+    text-align: center;
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: #9EACC6;
+}
+
+.albumcover-image {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.albumcover-text {
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transform: translateX(-100%);
+    }
+
+    .sidebar ul {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar-open .sidebar {
+        transform: translateX(0);
+    }
+}
+
+.music-chart {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.chart-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ranking {
+    font-weight: bold;
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.album-cover {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.percentage {
+    text-align: right;
+    margin-right: 20px;
+    color: #112759;
+    text-shadow: 0.5px 0.5px #9EACC6;
+    text-decoration-line: underline;
+    width: 100%;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.song-name {
+    flex-grow: 1;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+}
+
+.singer-name {
+    margin-top: 3px;
+    font-size: 13px;
+    font-style: italic;
+    text-align: left;
+    color: #7d7d7d;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-id {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile-right {
+    display: flex;
+    margin-left: 150px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+}
+
+.profile-button {
+    width: 220px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    background-color: #112759e7;
+    color: white;
+    cursor: pointer;
+    font-family: "Georgia", Times, serif;
+    justify-content: right;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-button:hover {
+    background-color: #112759;
+}
+
+.music-analytics {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 11px;
+    margin-right: 11px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auto-playlist, .weekly-top-3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-sections {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.analytics-section {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.analytics-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.lower-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auto-playlist, .weekly-top-3 {
+    flex: 1;
+    margin: 10px;
+}
+
+.playlist-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #112759;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Georgia", Times, serif;
+    color: white;
+    cursor: pointer;
+}
+
+.playlist-button:hover {
+    background-color: #112759;
+}
+
+.top-3-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-3-images img {
+    width: 30%;
+    height: auto;
+}
+
+.player {
+    background-color: #9eacc67e;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.playercover-text {
+    margin-bottom: 30px; 
+    font-size: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.volume-control {
+    width: 80%;
+}
+
+#player-button {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+}
+
+.playerbutton {
+    padding: 12px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #00112e;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}

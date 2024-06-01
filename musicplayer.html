@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #buttons {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10%;
+        }
+    
+        .button {
+            padding: 12px 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #00112e;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+      }
+
+      #player-button {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10%;
+            margin-top: 80px;
+        }
+    
+        .playerbutton {
+            padding: 10px 6px;
+            background-color: #ebeff5;
+            color: #00112e;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+      }
+
+      body {
+        background-color: #ebeff5;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <nav class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <a href="home.html">
+                <img src="logo.png" alt="logo" width="200" height="100">
+            </div>
+
+            <br>
+            <div id="buttons">
+            <a class="button" href="dailychart.html">Daily Chart</a>
+            <br>
+            <a class="button" href="musicanalytics.html">Music Analytics</a>
+            <br>
+            <a class="button" href="profile.html">Profile</a>
+
+            <div id="player-button">
+                <a class="playerbutton" href="musicplayer.html">▶️</a>
+            </div>
+
+        <div class="albumcover">
+            <img src="albumcover.png" alt="Album Cover" class="albumcover-image" width="150" height="150"> 
+            <p class="albumcover-text"><strong>Don't Start Now</strong><br>Dua Lipa</p>
+        </div>
+        </nav>
+
+        <main class="content-player">
+            <section id="music-player">
+                <h1>Music Player</h1>
+                <div class="player">
+                    <img src="album1.png" alt="Album 1" class="player-cover" width="300" height="300">
+                    <p class="playercover-text"><strong>Don't Start Now</strong><br>Dua Lipa</p>
+                    <audio id="audio" controls>
+                        <source src="your-music-file.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="controls">
+                        <input type="range" id="volume" class="volume-control" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>

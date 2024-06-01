@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Daily Chart</title>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #buttons {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10%;
+        }
+    
+        .button {
+            padding: 12px 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #00112e;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #player-button {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10%;
+            margin-top: 80px;
+        }
+    
+        .playerbutton {
+            padding: 10px 6px;
+            background-color: #ebeff5;
+            color: #00112e;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+      }
+
+        #container1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+            margin-top: 30px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+            margin-left: 350px;
+        }
+
+        body {
+            background-color: #ebeff5;
+        }
+
+        .continue {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <nav class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <a href="home.html">
+                <img src="logo.png" alt="logo" width="200" height="100">
+            </div>
+
+            <br>
+            <div id="buttons">
+            <a class="button" href="dailychart.html">Daily Chart</a>
+            <br>
+            <a class="button" href="musicanalytics.html">Music Analytics</a>
+            <br>
+            <a class="button" href="profile.html">Profile</a>
+
+            <div id="player-button">
+                <a class="playerbutton" href="musicplayer.html">▶️</a>
+            </div>
+        
+            <div class="albumcover">
+                <img src="albumcover.png" alt="Album Cover" class="albumcover-image" width="150" height="150"> 
+                <p class="albumcover-text"><strong>Don't Start Now</strong><br>Dua Lipa</p>
+        </div>
+    </nav>
+
+    <div id="container1">
+        <div class="dailychart-title">
+            <p class="dailychart-text"><strong>Daily Chart</strong></p>
+            <p class="p1">Daily top 100 music chart based on Melody Mind user's music analysis</p>
+        </div>
+
+        <section id="music-chart">
+            <ul class="music-chart">
+                <li class="chart-item">
+                    <span class="ranking">1</span>
+                    <img src="album1.png" alt="Album 1" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name"><u>Don't Start Now</u></span>
+                    <span class="singer-name">Dua Lipa</span>
+                </div>
+                <span class="percentage">88%</span>
+
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">2</span>
+                    <img src="album2.png" alt="Album 2" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Blinding Lights</span>
+                    <span class="singer-name">The Weekend</span>
+                </div>
+                <span class="percentage">67%</span>
+                
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">3</span>
+                    <img src="album3.png" alt="Album 3" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Circles</span>
+                    <span class="singer-name">Post Malone</span>
+                    </div>
+                <span class="percentage">56%</span>
+
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">4</span>
+                    <img src="album4.png" alt="Album 4" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Adore You</span>
+                    <span class="singer-name">Harry Styles</span>
+                </div>
+                <span class="percentage">78%</span>
+
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">5</span>
+                    <img src="album5.png" alt="Album 5" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Life Is Good</span>
+                    <span class="singer-name">Future ft.Drake</span>
+                </div>
+                <span class="percentage">89%</span>
+
+                <li class="chart-item">
+                    <span class="ranking">6</span>
+                    <img src="album6.png" alt="Album 6" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Memories</span>
+                    <span class="singer-name">Maroon 5</span>
+                </div>
+                <span class="percentage">70%</span>
+
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">7</span>
+                    <img src="album7.png" alt="Album 7" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">The bones</span>
+                    <span class="singer-name">Maren Morris</span>
+                </div>
+                <span class="percentage">66%</span>
+                
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">8</span>
+                    <img src="album8.png" alt="Album 8" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Someone You Loved</span>
+                    <span class="singer-name">Lewis Capaldi</span>
+                    </div>
+                <span class="percentage">88%</span>
+
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">9</span>
+                    <img src="album9.png" alt="Album 9" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Say So</span>
+                    <span class="singer-name">Doja Cat</span>
+                </div>
+                <span class="percentage">91%</span>
+
+                </li>
+                <li class="chart-item">
+                    <span class="ranking">10</span>
+                    <img src="album10.png" alt="Album 10" class="album-cover">
+                    <div class="song-info">
+                    <span class="song-name">Dance Monkey</span>
+                    <span class="singer-name">Tones and I</span>
+                </div>
+                <span class="percentage">74%</span>
+                </li>
+
+                <span class="continue">
+                <p>.</p>
+                </li>
+                <p>.</p>
+                </li>
+                <p>.</p>
+                </li>
+                <p>continuing...</p>
+            </span>
+            </ul>
+        </section>
+        </main>
+    </div>
+</body>
+</html>
