@@ -2,15 +2,15 @@
 
 
 ## Overview
-Melody Mind is an application that tracks the user’s music taste and recommend the best music choice for them. It’s built using basic HTML and Javascript. 
+Melody Mind is an application that tracks the user’s music taste and recommends the best music choice for them. It’s built using basic HTML and Javascript. 
 
 ## Version Control
-This project uses git and GitHub for tracking changes and managing the development.
-The GitHub repository here: https://github.com/SooA22/scho6885-tracker.git
+This project uses Git and GitHub for tracking changes and managing the development.
+The GitHub repository here: https://github.com/SooA22/scho6885_A3
 
 ## Features
-- **Daily Chart**: This chart tracks the music that the users listen and make it as an unique chart of Melody Mind.
-- **Music Analytics**: It helps the users to find their perfect matching song, artist, album, and genres.
+- **Daily Chart**: This chart tracks the music that the users listen and make it as a unique chart of Melody Mind.
+- **Music Analytics**: It helps the users to find their perfect matching song, artist, album, and genre.
 - **Profile**: It gives the simple version of the user’s music summary
 
 ## Setup 
@@ -25,7 +25,7 @@ Visit the URL below:
 - https://sooa22.github.io/scho6885_A3/musicplayer.html
 
 ## Limitations
-This app doesn't accurately stat very detailed numbers. It only shows my most completely matched output. This is where further development is possible.
+This app doesn't accurately state very detailed numbers. It only shows my most completely matched output. This is where further development is possible.
 
 ## Acknowledgments
 ### Sources
