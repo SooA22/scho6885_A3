@@ -1,0 +1,35 @@
+# Melody Mind
+
+
+## Overview
+Melody Mind is an application that tracks the user’s music taste and recommend the best music choice for them. It’s built using basic HTML and Javascript. 
+
+## Version Control
+This project uses git and GitHub for tracking changes and managing the development.
+The GitHub repository here: https://github.com/SooA22/scho6885-tracker.git
+
+## Features
+- **Daily Chart**: This chart tracks the music that the users listen and make it as an unique chart of Melody Mind.
+- **Music Analytics**: It helps the users to find their perfect matching song, artist, album, and genres.
+- **Profile**: It gives the simple version of the user’s music summary
+
+## Setup 
+No setup is required
+
+## Usage
+Visit the URL below:
+- https://sooa22.github.io/scho6885_A3/home.html
+- https://sooa22.github.io/scho6885_A3/dailychart.html
+- https://sooa22.github.io/scho6885_A3/musicanalytics.html
+- https://sooa22.github.io/scho6885_A3/profile.html
+- https://sooa22.github.io/scho6885_A3/musicplayer.html
+
+## Limitations
+This app doesn't accurately stat very detailed numbers. It only shows my most completely matched output. This is where further development is possible.
+
+## Acknowledgments
+### Sources
+*None to report*
+
+### AI usage Acknowledgments
+I chose a blue colour to set the overall atmosphere of this app. In addition, I lowered the overall tone to give a calm feeling so that it does not strain my eyes even after using the app for a long time. Finally, I found two representative colours, 9EACC6 and #112752. I wanted to express that the logo was as neat and simple as possible, and as a result, I used the play button as the main icon. The cursive writing of the app's name, "Melody Mind," is placed under the icon to give it a more luxurious feeling. In addition, I created a memorable slogan for users, which summarises all the services provided by the app with "Discover, Track, and Groove" in three words, and this slogan is also included in the representative logo.
